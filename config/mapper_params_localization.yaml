@@ -8,10 +8,10 @@ slam_toolbox:
     ceres_loss_function: None
 
     # ROS Parameters
-    odom_frame: odom
-    map_frame: map
-    base_frame: base_footprint
-    scan_topic: /scan
+    odom_frame: map
+    map_frame: slam_map
+    base_frame: ego_racecar/base_link
+    scan_topic: /sim/scan
     mode: mapping #localization
 
     # if you'd like to start localizing on bringup in a map and pose
