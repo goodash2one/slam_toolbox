@@ -7,6 +7,7 @@ def generate_launch_description():
     return LaunchDescription([
         launch_ros.actions.Node(
           parameters=[
+            {'use_sim_time': True},
             get_package_share_directory("slam_toolbox") + '/config/mapper_params_offline.yaml'
           ],
           package='slam_toolbox',
